@@ -1,0 +1,21 @@
+.button {
+    font: inherit;
+    border-radius: 20px;
+    border: none;
+    background-color: aquamarine;
+    color: black;
+    padding: 1rem 1rem;
+    cursor: e-resize;
+    box-shadow: 0 2px 8px rgb(0,0,0,0.26);
+    font-weight: 600;
+}
+
+.button:hover{
+    background-color: rgb(21, 189, 49);
+}
+
+.button:active{
+    background-color: crimson;
+    color:white;
+}
+

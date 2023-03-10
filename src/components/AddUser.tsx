@@ -19,11 +19,11 @@ const AddUser = () =>{
     }
 
     const addUserHandler = (event) =>{
-        event.preventDefault()
+        //event.preventDefault()
 
         if(+age < 1){
             setErrorModal({
-                title:"Błęny wiek",
+                title:"Błędny wiek",
                 msg:"LMAO"
             })
         }
@@ -32,9 +32,28 @@ const AddUser = () =>{
         setAge('')
     }
 
-    const errorHandler = () =>{
-        setErrorModal(null)
+    async function submit(event){
+        event.preventDefault();
+
+        console.log('aaa')
+    
+        const myObject={
+          myKey:'asdasdasds'
+        }
+    
+        console.log(myObject)
+        const res = await fetch('https://loginreactapp2-default-rtdb.firebaseio.com/dane.json',
+        {
+          method: 'POST',
+          body: JSON.stringify(myObject),
+          headers:{
+            'Content-Type': 'applicatio.json'
+          }
+        });
+        const data = await res.json();
+        console.log(data);
     }
+
 
     return(
         <>
@@ -44,7 +63,7 @@ const AddUser = () =>{
                     removeError={errorHandler}
             />}
             <Card className={classes.input}>
-                <form onSubmit={addUserHandler}>
+                <form onSubmit={submit}>
                     <label htmlFor="username">Username</label>
                     <input 
                         id="username" 

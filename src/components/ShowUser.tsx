@@ -24,11 +24,7 @@ const ShowUser = () => {
     getData().then((data) => {
       setLoadedData(data);
     });
-  }, [getData]);
-
-  useEffect(() => {
-    console.log(loadedData);
-  }, [loadedData]);
+  }, [getData()]);
 
   return(
     <div className={classes.dumy}>

@@ -14,7 +14,7 @@
 }
 
 .main:hover{
-  width: 40%;
+  width: 25%;
 }
 
 @keyframes slidebg {
@@ -22,7 +22,6 @@
     background-position:2800000vw;
   }
 }
-
 
 .dumy{
   display: flex;

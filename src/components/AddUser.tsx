@@ -77,7 +77,7 @@ const AddUser = () =>{
 
 
     return(
-        <>
+        <div className={classes.dumy}>
             {errorModal && <ErrorModal 
                     title={errorModal.title} 
                     msg={errorModal.msg}
@@ -120,7 +120,7 @@ const AddUser = () =>{
                     <Button myType="submit"> Add user </Button>
                 </form>
             </Card>
-        </>
+        </div>
     )
 }
 

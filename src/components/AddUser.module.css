@@ -50,3 +50,8 @@
 .input input:focus {
     outline: none;
 }
+
+.dumy{
+    display: flex;
+    justify-content: center;
+}

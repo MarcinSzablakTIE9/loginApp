@@ -1,8 +1,8 @@
 .input {
     padding: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .input label {
@@ -11,8 +11,9 @@
     color:black;
 }
 
-.input input {
+.divInput input {
     font: inherit;
+    width: 100%;
     font-size: 1.2rem;
     height: 2rem;
     padding: 0.3rem;
@@ -34,13 +35,13 @@
     letter-spacing: 0.16em;
 }
 
-.input div {
+.divInput {
     width: 50%;
     padding-top: 5%;
 }
 
 .input img {
-    width: 50%;
+    width: 40%;
 }
 
 .input input::placeholder {
@@ -54,4 +55,9 @@
 .dumy{
     display: flex;
     justify-content: center;
+}
+.input div{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
 }

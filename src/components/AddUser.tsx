@@ -87,36 +87,38 @@ const AddUser = () =>{
                 <form onSubmit={submit} className={classes.input}>
                     <h1>REGISTER NOW</h1>
                     <div>
-                        <input 
-                            placeholder="Username"
-                            id="username" 
-                            type="text"
-                            onChange = {namedChangeHandler}
-                            value = {name}
-                        />
-                        <input
-                            placeholder="Emial"
-                            id = "email"
-                            type ="text"
-                            onChange = {emailChangeHandler} 
-                            value = {email}
-                        />
-                        <input
-                            placeholder="Password"
-                            id = "password"
-                            type = "password"
-                            onChange = {passwordChangeHandler}
-                            value = {password} 
-                        />
-                        <input 
-                            placeholder="Age"
-                            id="age" 
-                            type="Number" 
-                            onChange = {ageChangeHandler}
-                            value = {age}
-                        />
+                        <div className={classes.divInput}>
+                            <input 
+                                placeholder="Username"
+                                id="username" 
+                                type="text"
+                                onChange = {namedChangeHandler}
+                                value = {name}
+                            />
+                            <input
+                                placeholder="Emial"
+                                id = "email"
+                                type ="text"
+                                onChange = {emailChangeHandler} 
+                                value = {email}
+                            />
+                            <input
+                                placeholder="Password"
+                                id = "password"
+                                type = "password"
+                                onChange = {passwordChangeHandler}
+                                value = {password} 
+                            />
+                            <input 
+                                placeholder="Age"
+                                id="age" 
+                                type="Number" 
+                                onChange = {ageChangeHandler}
+                                value = {age}
+                            />
+                        </div>
+                        <img src='https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjk2OWY5MzdmOGQ4OTkyYzgyN2FjNDgwZGNhODM5ZDdmZTI3YzM0NCZjdD1z/mGK3Dtq4orWK6s8vLG/giphy.gif'/>
                     </div>
-                    <img src='https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjk2OWY5MzdmOGQ4OTkyYzgyN2FjNDgwZGNhODM5ZDdmZTI3YzM0NCZjdD1z/mGK3Dtq4orWK6s8vLG/giphy.gif'/>
                     <Button myType="submit"> Add user </Button>
                 </form>
             </Card>
